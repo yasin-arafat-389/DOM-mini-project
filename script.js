@@ -1,4 +1,4 @@
-// Toggling apply button conditionally
+// Toggling apply button conditionally and cart calculation
 let inputFieldOfCoupon = document.getElementById("coupon-input");
 let btnApply = document.getElementById("apply");
 let totalAmount = document.getElementById("total");
@@ -60,3 +60,8 @@ for (let i = 0; i < product.length; i++) {
     totalElement.innerText = total.toFixed(2);
   });
 }
+
+//Reset everything upon clicking Go Home button
+document.getElementById("reset").addEventListener("click", function () {
+  window.location.reload();
+});
